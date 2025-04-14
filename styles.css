@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/tuo-font.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #111;
+    font-weight: 300;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    background: #fff;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.product, .artist {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product img, .artist img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img:hover, .artist img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #333;
+}
+
+.artisti {
+    margin-top: 60px;
+}
+
+.artisti h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.artist p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #444;
+}
